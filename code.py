@@ -1,10 +1,10 @@
 class PythonUnitTest:
     @staticmethod
     def count(arg):
-        str = arg
+        string = arg
         total = 0
 
-        for i in str:
+        for i in string:
             total = total + 1
         return total
 
@@ -83,7 +83,7 @@ class PythonUnitTest:
         for i in range(1, 1001):
             if (i % 2) == 1:
                 if (i % 5) == 0:
-                    if __name__ == "__main__":
+                    if __name__ == "__main__": # hanya untuk di tampilkan disini
                         print(i, "Ganjil kelipatan 5")
                 else:
                     if __name__ == "__main__":
@@ -113,3 +113,5 @@ class PythonUnitTest:
         stuff.insert(0, 'Handuk')
         stuff.append('celana')
         return stuff
+
+PythonUnitTest.odd_even_multiples()

@@ -25,6 +25,7 @@ class PythonTest(unittest.TestCase):
         self.assertIsNotNone(P.even1_100())
     def test_odd_even_multiples(self):
         self.assertEqual(P.odd_even_multiples(), P.odd_even_multiples())
+        self.assertIsNone(P.odd_even_multiples()) # datanya klo di sini ga ditampilin jadinya none,
     def test_reverseword(self):
         self.assertEqual(P.reverseword("saya ingin makan nasi goreng"), "goreng nasi makan ingin saya")
     def test_addtoarray(self):
