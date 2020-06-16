@@ -83,17 +83,22 @@ class PythonUnitTest:
         for i in range(1, 1001):
             if (i % 2) == 1:
                 if (i % 5) == 0:
-                    print(i, "Ganjil kelipatan 5")
+                    if __name__ == "__main__":
+                        print(i, "Ganjil kelipatan 5")
                 else:
-                    print(i, "Ganjil")
+                    if __name__ == "__main__":
+                        print(i, "Ganjil")
             elif (i % 2) == 0:
                 if (i % 5) == 0:
                     if (i % 100) == 0:
-                        print(i, "kelipatan 100")
+                        if __name__ == "__main__":
+                            print(i, "kelipatan 100")
                     else:
-                        print(i, "Genap kelipatan 5")
+                        if __name__ == "__main__":
+                            print(i, "Genap kelipatan 5")
                 else:
-                    print(i, "Genap")
+                    if __name__ == "__main__":
+                        print(i, "Genap")
 
     @staticmethod
     def reverseword(arg):
