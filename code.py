@@ -113,5 +113,3 @@ class PythonUnitTest:
         stuff.insert(0, 'Handuk')
         stuff.append('celana')
         return stuff
-
-PythonUnitTest.odd_even_multiples()
